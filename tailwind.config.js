@@ -1,4 +1,5 @@
 /** @type {import('tailwindcss').Config} */
+
 export default {
   content: ["index.html"],
   theme: {
@@ -15,8 +16,8 @@ export default {
         "medium-slate-blue": "#766CF1",
       },
       backgroundImage: {
-        mobile: "url('pattern-background-mobile.svg')",
-        desktop: "url('pattern-background-desktop.svg')",
+        mobile: "url(/pattern-background-mobile.svg)",
+        desktop: "url(/pattern-background-desktop.svg)",
       },
       borderRadius: {
         "4xl": "2rem",

@@ -148,11 +148,19 @@ function keyDownListener(
       modal.style.display = "none";
     });
 
+  const html = document.querySelector("html");
+  if (!html) return;
+
   const btnKeyboard = document.querySelector<HTMLButtonElement>(".keyboard");
   if (!btnKeyboard) return;
 
   btnKeyboard.addEventListener("click", function () {
     modal.style.display = "block";
+  });
+
+  window.addEventListener("load", function () {
+    btnKeyboard.style.backgroundColor =
+      window.getComputedStyle(html).backgroundColor;
   });
   document.addEventListener("keydown", keyDownListener.bind(modal));
 })();

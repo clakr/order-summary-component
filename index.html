@@ -1,5 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+<html
+  lang="en"
+  class="bg bg-solitude bg-mobile bg-contain bg-no-repeat desktop:bg-desktop"
+>
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
@@ -9,14 +12,76 @@
     <title></title>
 
     <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,700;0,900;1,500&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- JS Modules -->
     <script type="module" src="src/main.ts" async></script>
     <script type="module" src="src/_authorModal.ts" async></script>
   </head>
   <body>
-    <main>
+    <main class="grid min-h-screen place-items-center px-[2.4rem]">
       <h1 class="sr-only"></h1>
+      <div
+        class="max-w-[32.7rem] overflow-hidden rounded-4xl bg-white shadow-card desktop:max-w-[45rem]"
+      >
+        <img
+          class="h-64 w-[32.7rem] desktop:h-[22rem] desktop:w-[45rem]"
+          src="illustration-hero.svg"
+          alt="Card Illustration"
+        />
+        <div
+          class="flex flex-col gap-y-[1.6rem] px-[2.4rem] py-[3.2rem] desktop:gap-y-[1.7rem] desktop:px-[4.8rem] desktop:pb-[4.8rem] desktop:pt-[4.5rem]"
+        >
+          <h2
+            class="text-center text-[2.2rem] font-black leading-[2.911rem] text-bunting desktop:text-[2.8rem] desktop:leading-[3.704rem]"
+          >
+            Order Summary
+          </h2>
+          <p
+            class="text-center text-2xl font-medium leading-10 text-shipcove desktop:text-[1.6rem] desktop:leading-[2.6rem]"
+          >
+            You can now listen to millions of songs, audiobooks, and podcasts on
+            any device anywhere you like!
+          </p>
+          <div
+            class="mt-[.8rem] flex items-center gap-x-8 rounded-[1.1rem] bg-ghost-white px-[1.6rem] pb-[1.6rem] pt-[1.7rem] desktop:mt-[.3rem] desktop:px-[2.4rem] desktop:py-10"
+          >
+            <img
+              class="h-[4.8rem] w-[4.8rem]"
+              src="icon-music.svg"
+              alt="Music Icon"
+            />
+            <div
+              class="flex flex-col gap-y-[.3rem] text-[1.4rem] leading-[1.852rem] desktop:gap-y-[.6rem] desktop:text-[1.6rem] desktop:leading-[2.117rem]"
+            >
+              <span class="font-black text-bunting">Annual Plan</span>
+              <span class="font-medium text-shipcove">$59.99/year</span>
+            </div>
+            <button
+              class="ml-12 text-[1.3rem] font-bold leading-[1.72rem] text-han-purple underline active:text-medium-slate-blue active:no-underline desktop:ml-[7.4rem] desktop:text-[1.4rem] desktop:leading-[1.852rem]"
+            >
+              Change
+            </button>
+          </div>
+          <button
+            class="mt-[.8rem] rounded-[1.1rem] bg-han-purple py-6 text-2xl font-black leading-[1.985rem] text-white shadow-button active:bg-medium-slate-blue desktop:mt-[1.5rem]"
+            type="button"
+          >
+            Proceed to Payment
+          </button>
+          <button
+            class="mt-[.8rem] text-2xl leading-[1.985rem] text-shipcove active:text-bunting desktop:mt-[1.5rem]"
+            type="button"
+          >
+            Cancel Order
+          </button>
+        </div>
+      </div>
     </main>
   </body>
 </html>
